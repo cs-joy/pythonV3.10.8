@@ -1,4 +1,4 @@
-# varibale: basically it's just container where we can store certain data values
+# variable: basically it's just container where we can store certain data values
 #           and we use a variable put those data values inside containers, it makes a lot easier for us to
 #           work with and manage all of the different data inside of our programs
 # 
@@ -22,6 +22,6 @@ is_Male = True # either True or False are valid in boolean data types
 print("There onece was a man named " + character_name + ", ")
 print("he was " + character_age + " years old.")
 
-character_name = "Joy"
+character_name = "Joy" # updating the value of the variable
 print("He really liked the name " + character_name + ", ")
 print("but didn't like being " + character_age + ".")

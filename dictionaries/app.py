@@ -15,3 +15,9 @@ monthConversions = {
     "Nov": "November",
     "Dec": "December"
 }
+
+# access value- first way
+print(monthConversions["Jun"])
+
+# access value- second way
+print(monthConversions.get("Aug"))

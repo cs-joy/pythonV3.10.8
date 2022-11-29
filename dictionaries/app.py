@@ -21,3 +21,13 @@ print(monthConversions["Jun"])
 
 # access value- second way
 print(monthConversions.get("Aug"))
+
+# if key is not right then python give us ``KeyError``
+# like...
+try:
+    print(monthConversions["Luv"])
+except:
+    print("key is not found in your dictionary!")
+
+# if key is not present in the dictionaries then this function should say ``None``
+print(monthConversions.get("Hel"))

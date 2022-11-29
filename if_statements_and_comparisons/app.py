@@ -1,7 +1,14 @@
 
 # comparison
-# comparison operator `>=`
-# comparison statements `num1 >= num2`
+# comparison operators 
+# `<`
+# `>`
+# `<=`
+# `>=` 
+# `==`
+# `!=`
+# comparison statement `num1 >= num2`
+# number comparison
 def max_num(num1, num2, num3):
     if num1 >= num2 and num1 >= num3:
         return num1
@@ -9,3 +16,17 @@ def max_num(num1, num2, num3):
         return num2
     else:
         return num3
+
+print(max_num(300, 40, 50))
+
+# string comparison
+password = "doe1234"
+retype_password = "doe1234"
+
+def password_validation(first, second):
+    if first == second:
+        return("you are done!")
+    else:
+        raise Exception("please retype your password correctly!")
+
+print(password_validation(password, retype_password))

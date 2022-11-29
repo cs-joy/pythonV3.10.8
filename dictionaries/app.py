@@ -31,3 +31,21 @@ except:
 
 # if key is not present in the dictionaries then this function should say ``None``
 print(monthConversions.get("Hel"))
+
+# another way with get()
+print(monthConversions.get("Lov", "Not a valid Key"))
+
+country_list = {
+    0: "Bangladesh",
+    1: "United States",
+    2: "United Kingdom",
+    3: "India",
+    4: "Pakisthan",
+    5: 'Canada'
+}
+
+print(country_list[0])
+
+print(country_list.get(4))
+
+print(country_list.get(6, "Not a valid Key"))

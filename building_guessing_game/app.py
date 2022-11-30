@@ -1,9 +1,20 @@
 
 
-secret_keyword= "sharp"
-guess= ""
+secret_keyword = "something"
+guess = ""
 
-while guess != secret_keyword:
-    guess = input("Enter guess: ")
+guess_count = 0
+guess_limit = 3
+out_of_guesses = False
 
-print("You win!")
+while guess != secret_keyword and not(out_of_guesses):
+    if guess_count < guess_limit:
+        guess = input("Enter guess: ")
+        guess_count += 1
+    else:
+        out_of_guesses = True
+
+if out_of_guesses:
+    print("Out of guesses, You LOSE!")
+else:
+    print("You win!")

@@ -28,3 +28,15 @@ employee = ['Kiran', 'Qualam', 'Jenny', 'Strophy']
 
 for index in range(len(employee)):
     print(employee[index])
+
+print('\n')
+
+# example
+employee = ['Kiran', 'Qualam', 'Jenny', 'Strophy']
+
+for index in range(len(employee)):
+    if index == 0:
+        print('first iteration')
+    else:
+        print('not a first!')
+# this is the basics of for loop in python

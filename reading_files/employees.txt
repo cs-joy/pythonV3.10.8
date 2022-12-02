@@ -1,5 +1,5 @@
 Jim - Salesman
-Doe - Salesman
+Kally - Salesman
 Kelvin - Receptionist
-Kally - Manager
-Oscar - Acountant
+Jenny - Manager
+Doe - Acountant

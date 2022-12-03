@@ -17,7 +17,7 @@ def run_test(questions):
     for question in questions:
         answer = input(question.prompt)
         if answer == question.answer:
-            score += 5
+            score += 1
     print("You got " + str(score) + "/" + str(len(questions)) + " Correct")
 
 

@@ -6,3 +6,5 @@
 # command - `python`
 
 # it's essentially just in environment where we can test out python code
+
+print("python interpreter!")

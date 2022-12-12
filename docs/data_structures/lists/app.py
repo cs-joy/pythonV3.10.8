@@ -86,3 +86,7 @@ list.extend(iterable)
 owner = ['mark', 'doe', 'john', 'mike', 'kelvin']
 fruits.extend(owner)
 print(fruits)
+
+
+
+#### ref:: https://docs.python.org/3/tutorial/datastructures.html

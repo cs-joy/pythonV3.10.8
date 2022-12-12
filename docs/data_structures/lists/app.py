@@ -52,3 +52,11 @@ list.pop([i])
 '''
 print(fruits.pop(5))
 print(fruits)
+
+
+'''
+list.copy()
+     Return a shallow copy of the list. Equivalent to a[:].
+'''
+copy_fruits = fruits.copy()
+print(copy_fruits)

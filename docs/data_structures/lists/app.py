@@ -68,3 +68,11 @@ list.clear()
      Remove all items from the list. Equivalent to del a[:].
 '''
 print(copy_fruits.clear())
+
+
+'''
+list.remove(x)
+    Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.
+'''
+fruits.remove('grape')
+print(fruits)

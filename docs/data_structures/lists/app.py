@@ -76,3 +76,13 @@ list.remove(x)
 '''
 fruits.remove('grape')
 print(fruits)
+
+
+
+'''
+list.extend(iterable)
+     Extend the list by appending all the items from the iterable. Equivalent to a[len(a):] = iterable. 
+'''
+owner = ['mark', 'doe', 'john', 'mike', 'kelvin']
+fruits.extend(owner)
+print(fruits)

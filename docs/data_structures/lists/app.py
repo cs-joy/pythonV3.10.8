@@ -60,3 +60,11 @@ list.copy()
 '''
 copy_fruits = fruits.copy()
 print(copy_fruits)
+
+
+
+'''
+list.clear()
+     Remove all items from the list. Equivalent to del a[:].
+'''
+print(copy_fruits.clear())

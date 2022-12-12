@@ -18,3 +18,12 @@ list.index(x[, start[, end]])
 print(fruits.index('banana'))
 
 print(fruits.index('banana', 4)) # Find next banana starting at position 4
+
+
+
+'''
+list.reverse()
+     Reverse the elements of the list in place.
+'''
+fruits.reverse()
+print(fruits)

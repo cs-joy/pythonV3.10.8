@@ -19,3 +19,5 @@ print(squareList) # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 # or, equivalently:
 square = [x**2 for x in range(10)]
 print(square) # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# ref :: https://docs.python.org/3/tutorial/datastructures.html

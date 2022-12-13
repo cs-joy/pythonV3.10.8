@@ -18,8 +18,18 @@ print(queue)
 queue.append('jim') # jim arrives
 print(queue)
 
-# pop()
+# popleft()
 queue.popleft() # The first('mike') to arrive now leaves
 print(queue) # Remaining queue in order of arrival
 queue.popleft() # 'kavin' is gone
 print(queue)
+
+
+# with appendleft()
+queue.appendleft('john') # insert('john') from the begining of the list
+print(queue)
+
+
+# with pop()
+queue.pop() # retrieve last element('jim') of the list
+print(queue) # 'jim' has gone

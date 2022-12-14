@@ -34,12 +34,22 @@ print(
 )
 
 # and it's equivalent to
-comb = []
+combs = []
 for x in [1, 2, 3]:
     for y in [3, 1, 4]:
         if x != y:
-            comb.append((x, y))
+            combs.append((x, y))
+
+print(combs)
 
 
+'''
+Note how the order of the `for` and `if` statements is the same in both these snippets.
+
+If the expression is a tuple (e.g. the (x, y) in the previous example), it must be parenthesized.
+'''
+
+vec = [-4, -2, 0, 2, 4]
+# create new list with values doubled
 
 # ref :: https://docs.python.org/3/tutorial/datastructures.html

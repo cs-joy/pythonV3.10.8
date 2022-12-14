@@ -20,4 +20,26 @@ print(squareList) # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 square = [x**2 for x in range(10)]
 print(square) # [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
+''''
+
+which is more concise and readable.
+
+A list comprehension consists of brackets containing an expression followed by a for clause, then zero or more for or if clauses. 
+The result will be a new list resulting from evaluating the expression in the context of the for and if clauses which follow it. 
+For example, this listcomp combines the elements of two lists if they are not equal:
+
+'''
+print(
+    [(x, y) for x in [1, 2, 3] for y in [3, 1, 4] if x != y]
+)
+
+# and it's equivalent to
+comb = []
+for x in [1, 2, 3]:
+    for y in [3, 1, 4]:
+        if x != y:
+            comb.append((x, y))
+
+
+
 # ref :: https://docs.python.org/3/tutorial/datastructures.html

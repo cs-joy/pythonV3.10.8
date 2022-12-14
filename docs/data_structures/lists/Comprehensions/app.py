@@ -68,7 +68,17 @@ print(
 freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']
 print(
     # strip() - return a copy of the string with leading and trailing whitespace removed
-    [weapon.strip() for weapon in freshfruit]
+    [weapon.strip() for weapon in freshfruit] # ['banana', 'loganberry', 'passion fruit']
+)
+
+# create a list of 2 tuples like (number, square)
+nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(
+    [(x, x**2) for x in nums]
+    # [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25), (6, 36), (7, 49), (8, 64), (9, 81), (10, 100)]
+
+    # [(x, x**2) for x in range(11)]
+    # [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25), (6, 36), (7, 49), (8, 64), (9, 81), (10, 100)]
 )
 
 

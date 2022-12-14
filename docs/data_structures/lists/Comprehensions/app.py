@@ -90,6 +90,12 @@ SyntaxError: did you forget parentheses around the comprehension target?
 
 '''
 
+# flatten a list using a listcomp with two `for`
+num_set = [[1, 3, 5], [2, 4, 6], [7, 8, 9]]
+print(
+    [number for elements in num_set for number in elements]
+    # [1, 3, 5, 2, 4, 6, 7, 8, 9]
+)
 
 
 # ref :: https://docs.python.org/3/tutorial/datastructures.html

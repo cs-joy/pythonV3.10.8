@@ -76,10 +76,19 @@ nums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(
     [(x, x**2) for x in nums]
     # [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25), (6, 36), (7, 49), (8, 64), (9, 81), (10, 100)]
-
+    
     # [(x, x**2) for x in range(11)]
     # [(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25), (6, 36), (7, 49), (8, 64), (9, 81), (10, 100)]
 )
+### note:: the tuple must be parthenthesized, otherwise an error is raised
+'''
+[x, x**2 for x in range(11)]
+  File "<stdin>", line 78
+    [x, x**2 for x in range(11)]
+     ^^^^^^^
+SyntaxError: did you forget parentheses around the comprehension target?
+
+'''
 
 
 

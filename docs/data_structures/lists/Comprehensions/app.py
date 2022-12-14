@@ -51,5 +51,15 @@ If the expression is a tuple (e.g. the (x, y) in the previous example), it must 
 
 vec = [-4, -2, 0, 2, 4]
 # create new list with values doubled
+print(
+    [x*2 for x in vec] # [-8, -4, 0, 4, 8]
+)
+# filter the list to exclude negative numbers
+print(
+    [x for x in vec if x >= 0] # [0, 2, 4]]
+)
+
+
+
 
 # ref :: https://docs.python.org/3/tutorial/datastructures.html

@@ -59,6 +59,17 @@ print(
     [x for x in vec if x >= 0] # [0, 2, 4]]
 )
 
+# apply a function to all the elements
+print(
+    [abs(x) for x in vec] # [4, 2, 0, 2, 4]
+)
+
+# call a method on each element
+freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']
+print(
+    # strip() - return a copy of the string with leading and trailing whitespace removed
+    [weapon.strip() for weapon in freshfruit]
+)
 
 
 

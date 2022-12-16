@@ -42,3 +42,10 @@ for i in range(4):
     t.append(t_row)
 
 print(t)
+
+
+'''
+In the real world, you should prefer built-in functions to complex flow statements. 
+The `zip()` function would do a great job for this use case:
+'''
+print(list(zip(*matrix)))

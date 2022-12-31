@@ -11,6 +11,6 @@ Here is a brief demonstration:
 basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
 print(basket)                      # show that duplicates have been removed
 
-'orange' in basket                 # fast membership testing
+print('orange' in basket)                 # fast membership testing
 
-'crabgrass' in basket
+print('crabgrass' in basket)

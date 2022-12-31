@@ -27,3 +27,4 @@ A special problem is the construction of tuples containing 0 or 1 items: the syn
 '''
 
 empty = ()
+singleton = 'hello',

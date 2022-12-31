@@ -9,4 +9,9 @@ nested = t, (123, 654, 321)
 print(nested)
 
 # Tuples are immutable
-nested[3] = 56789 # 'tuple' object does not support item assignment
+#nested[3] = 56789 # 'tuple' object does not support item assignment
+
+
+# but they can contain mutable objects:
+v = ([1, 2, 3], [3, 2, 1])
+print(v)

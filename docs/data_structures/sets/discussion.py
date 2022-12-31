@@ -7,3 +7,10 @@ Curly braces or the set() function can be used to create sets. Note: to create a
 Here is a brief demonstration:
 
 '''
+
+basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+print(basket)                      # show that duplicates have been removed
+
+'orange' in basket                 # fast membership testing
+
+'crabgrass' in basket

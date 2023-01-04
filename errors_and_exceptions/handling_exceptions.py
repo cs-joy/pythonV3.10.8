@@ -7,9 +7,8 @@ note that a user-generated interruption is signalled by raising the KeyboardInte
 while True:
     try:
         x = int(input('Please enter a number: '))
-        print(x/0)
         break
-    except (ZeroDivisionError):
+    except ValueError:
         print("Oops!  That was no valid number.  Try again...")
 
 '''
@@ -32,4 +31,11 @@ An except clause may name multiple exceptions as a parenthesized tuple, for exam
 ...     pass
 ```
 
+'''
+
+
+
+'''
+A class in an except clause is compatible with an exception if it is the same class or a base class thereof (but not the other way around — an except clause listing a derived class is not compatible with a base class). 
+For example, the following code will print B, C, D in that order:
 '''

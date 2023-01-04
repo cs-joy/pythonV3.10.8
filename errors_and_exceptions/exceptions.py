@@ -20,3 +20,14 @@ Traceback (most recent call last):
 TypeError: can only concatenate str (not "int") to str
 
 '''
+
+num1 = 10
+num2 = 0
+# ZeroDivisionError
+# print(num1/num2)
+
+# NameError
+# print(num1 * (spam+3))
+
+# TypeError
+# print('2' + num1)

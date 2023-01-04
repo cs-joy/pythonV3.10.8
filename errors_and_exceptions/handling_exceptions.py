@@ -4,12 +4,14 @@ It is possible to write programs that handle selected exceptions. Look at the fo
 note that a user-generated interruption is signalled by raising the KeyboardInterrupt exception.
 '''
 
+'''
 while True:
     try:
         x = int(input('Please enter a number: '))
         break
     except ValueError:
         print("Oops!  That was no valid number.  Try again...")
+'''
 
 '''
 
@@ -39,3 +41,26 @@ An except clause may name multiple exceptions as a parenthesized tuple, for exam
 A class in an except clause is compatible with an exception if it is the same class or a base class thereof (but not the other way around — an except clause listing a derived class is not compatible with a base class). 
 For example, the following code will print B, C, D in that order:
 '''
+
+class B(Exception):
+    pass
+
+class C(B):
+    pass
+
+class D(C):
+    pass
+
+
+for cls in [B, C, D]:
+    try:
+        raise cls()
+    except D:
+        print("D")
+    except C:
+        print("C")
+    except B:
+        print("B")
+
+
+# ref: https://docs.python.org/3/tutorial/errors.html#syntax-errors

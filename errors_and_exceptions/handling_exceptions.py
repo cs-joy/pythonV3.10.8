@@ -125,7 +125,7 @@ except OSError as err:
 except ValueError:
     print('Could not convert data to an integer.')
 except Exception as err:
-    print(f"Unexpected {err}, {type(err)=}")
+    print(f"Unexpected {err=}, {type(err)=}")
     raise
 '''
 
@@ -179,6 +179,7 @@ avoids accidentally catching an exception that wasn’t raised by the code being
 Exception handlers do not handle only exceptions that occur immediately in the try clause, 
 but also those that occur inside functions that are called (even indirectly) in the try clause. For example:
 '''
+
 
 def div():
     1/0

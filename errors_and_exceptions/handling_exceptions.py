@@ -75,6 +75,7 @@ The except clause may specify a variable after the exception name. The variable 
 For convenience, builtin exception types define __str__() to print all the arguments without explicitly accessing .args
 '''
 
+'''
 try:
     raise Exception('spam', 'egg', 'args')
 except Exception as inst:
@@ -86,7 +87,7 @@ except Exception as inst:
     print('x =', x)
     print('y =', y)
     print('z =', z)
-
+'''
 
 '''
 The exception’s __str__() output is printed as the last part (‘detail’) of the message for unhandled exceptions.
@@ -97,3 +98,17 @@ Exception can be used as a wildcard that catches (almost) everything. However, i
 
 The most common pattern for handling Exception is to print or log the exception and then re-raise it (allowing a caller to handle the exception as well):
 '''
+
+import sys
+
+while True:
+    try:
+        
+        print('1. exit')
+        n = int(input())
+        if n == 1:
+            sys.exit()
+        else:
+            print('n is ', n)
+    except ValueError:
+        print("Oops!  That was no valid number.  Try again...")

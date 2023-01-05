@@ -66,6 +66,15 @@ for cls in [B, C, D]:
 
 # ref: https://docs.python.org/3/tutorial/errors.html#syntax-errors
 
+'''
+Note that if the except clauses were reversed (with except B first), it would have printed B, B, B — the first matching except clause is triggered.
+
+When an exception occurs, it may have associated values, also known as the exception’s arguments. The presence and types of the arguments depend on the exception type.
+
+The except clause may specify a variable after the exception name. The variable is bound to the exception instance which typically has an args attribute that stores the arguments.
+For convenience, builtin exception types define __str__() to print all the arguments without explicitly accessing .args
+'''
+
 try:
     raise Exception('spam', 'egg')
 except Exception as inst:

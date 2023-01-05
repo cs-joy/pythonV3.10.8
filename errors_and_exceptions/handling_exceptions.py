@@ -86,3 +86,14 @@ except Exception as inst:
     print('x =', x)
     print('y =', y)
     print('z =', z)
+
+
+'''
+The exception’s __str__() output is printed as the last part (‘detail’) of the message for unhandled exceptions.
+
+BaseException is the common base class of all exceptions. One of its subclasses, Exception, is the base class of all the non-fatal exceptions. Exceptions which are not subclasses of Exception are not typically handled, because they are used to indicate that the program should terminate. They include SystemExit which is raised by sys.exit() and KeyboardInterrupt which is raised when a user wishes to interrupt the program.
+
+Exception can be used as a wildcard that catches (almost) everything. However, it is good practice to be as specific as possible with the types of exceptions that we intend to handle, and to allow any unexpected exceptions to propagate on.
+
+The most common pattern for handling Exception is to print or log the exception and then re-raise it (allowing a caller to handle the exception as well):
+'''

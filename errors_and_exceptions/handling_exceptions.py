@@ -101,6 +101,7 @@ The most common pattern for handling Exception is to print or log the exception 
 
 import sys
 
+'''
 while True:
     try:
         
@@ -112,3 +113,16 @@ while True:
             print('n is ', n)
     except ValueError:
         print("Oops!  That was no valid number.  Try again...")
+'''
+
+
+try:
+    f = open('myfile.txt')
+    s = f.readline()
+    i = int(s.strip())
+except OSError as err:
+    print('OS Error: ', err)
+except ValueError:
+    print('Could not convert data to an integer.')
+except Exception as err:
+    print(f"Unexpected {err}, {type(err)=}")

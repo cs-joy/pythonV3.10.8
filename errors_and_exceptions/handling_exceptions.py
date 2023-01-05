@@ -42,6 +42,7 @@ A class in an except clause is compatible with an exception if it is the same cl
 For example, the following code will print B, C, D in that order:
 '''
 
+'''
 class B(Exception):
     pass
 
@@ -61,6 +62,17 @@ for cls in [B, C, D]:
         print("C")
     except B:
         print("B")
-
+'''
 
 # ref: https://docs.python.org/3/tutorial/errors.html#syntax-errors
+
+try:
+    raise Exception('spam', 'egg')
+except Exception as inst:
+    print(type(inst))    # the exception instance
+    print(inst.args)     # arguments stored in .args
+    print(inst)          # __str__ allows args to be printed directly,
+                         # but may be overridden in exception subclasses
+    x, y = inst.args     # unpack args
+    print('x =', x)
+    print('y =', y)

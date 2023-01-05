@@ -149,6 +149,17 @@ except Exception as err:
 else:
     print('Nice!, int data in your file')
 '''
+'''
+def div():
+    1/2
+
+try:
+    div()
+except Exception as err:
+    print('Handling run-time error: ', err)
+else:
+    print('definition of the method is correct or passed successfully!')
+'''
 
 '''
 for arg in sys.argv[1:]:
@@ -161,3 +172,18 @@ for arg in sys.argv[1:]:
         f.close()
 '''
 
+'''
+The use of the else clause is better than adding additional code to the try clause because it 
+avoids accidentally catching an exception that wasn’t raised by the code being protected by the try … except statement.
+
+Exception handlers do not handle only exceptions that occur immediately in the try clause, 
+but also those that occur inside functions that are called (even indirectly) in the try clause. For example:
+'''
+
+def div():
+    1/0
+
+try:
+    div()
+except Exception as err:
+    print('Handling run-time error: ', err)

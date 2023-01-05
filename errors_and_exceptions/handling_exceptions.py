@@ -115,6 +115,24 @@ while True:
         print("Oops!  That was no valid number.  Try again...")
 '''
 
+'''
+try:
+    f = open('E:/GitHub/pythonV3.10.8/errors_and_exceptions/myfile.txt')
+    s = f.readline()
+    i = int(s.strip())
+except OSError as err:
+    print('OS Error: ', err)
+except ValueError:
+    print('Could not convert data to an integer.')
+except Exception as err:
+    print(f"Unexpected {err}, {type(err)=}")
+    raise
+'''
+
+'''
+The `try … except` statement has an optional else clause, which, when present, must follow all except clauses. 
+It is useful for code that must be executed if the try clause does not raise an exception. For example:
+'''
 
 try:
     f = open('E:/GitHub/pythonV3.10.8/errors_and_exceptions/myfile.txt')
@@ -127,3 +145,6 @@ except ValueError:
 except Exception as err:
     print(f"Unexpected {err}, {type(err)=}")
     raise
+else:
+    print('Nice!, int data in your file')
+

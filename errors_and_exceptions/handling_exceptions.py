@@ -134,6 +134,7 @@ The `try … except` statement has an optional else clause, which, when present,
 It is useful for code that must be executed if the try clause does not raise an exception. For example:
 '''
 
+'''
 try:
     f = open('E:/GitHub/pythonV3.10.8/errors_and_exceptions/myfile.txt')
     s = f.readline()
@@ -147,4 +148,16 @@ except Exception as err:
     raise
 else:
     print('Nice!, int data in your file')
+'''
+
+'''
+for arg in sys.argv[1:]:
+    try:
+        f = open(arg, 'r')
+    except OSError:
+        print('cannot open', arg)
+    else:
+        print(arg, 'has', len(f.readline()), 'lines')
+        f.close()
+'''
 

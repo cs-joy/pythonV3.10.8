@@ -117,7 +117,7 @@ while True:
 
 
 try:
-    f = open('myfile.txt')
+    f = open('E:/GitHub/pythonV3.10.8/errors_and_exceptions/myfile.txt')
     s = f.readline()
     i = int(s.strip())
 except OSError as err:
@@ -126,3 +126,4 @@ except ValueError:
     print('Could not convert data to an integer.')
 except Exception as err:
     print(f"Unexpected {err}, {type(err)=}")
+    raise

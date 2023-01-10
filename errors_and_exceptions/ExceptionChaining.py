@@ -7,7 +7,7 @@ it will have the exception being handled attached to it and included in the erro
 try:
     open('database.txt')
 except OSError:
-    print('not')
+    print('file not found')
 
 
 

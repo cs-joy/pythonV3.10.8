@@ -38,6 +38,7 @@ raise RuntimeError from exc
 This can be useful when you are transforming exceptions. For example:
 '''
 
+'''
 def func():
     raise ConnectionError
 
@@ -47,6 +48,7 @@ try:
 
 except ConnectionError as exc:
     raise RuntimeError('Failed to open database') from exc
+'''
 
 '''
 Traceback (most recent call last):
@@ -66,7 +68,16 @@ RuntimeError: Failed to open database
 
 
 
+'''
+It also allows disabling automatic exception chaining using the from None idiom:
+'''
 
+try:
+    open('database.sqlite')
+except OSError:
+    raise RuntimeError from None
+
+# For more information about chaining mechanics, see Built-in Exceptions(https://docs.python.org/3/library/exceptions.html#bltin-exceptions).
 
 
 

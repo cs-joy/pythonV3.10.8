@@ -21,3 +21,5 @@ print(item1.calculate_total_price())
 
 print(item2.calculate_total_price())
 
+
+# ref: https://www.youtube.com/watch?v=Ej_02ICOIgs

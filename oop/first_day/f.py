@@ -1,6 +1,6 @@
 class Item:
     # magic method - __init__()
-    def __init__(self, name, price, quantity=0):
+    def __init__(self, name: str, price: float, quantity=0):
         self.name = name # dynamic attribute assignment
         self.price = price
         self.quatity = quantity

@@ -1,16 +1,19 @@
 class Item:
     # magic method - __init__()
-    def __init__(self):
-        pass
+    def __init__(self, name):
+        print(f"An instance created: {name}")
 
-    def calculate_area(self, x, y):
+    def calculate_total_price(self, x, y):
         return x * y
 
-item1 = Item()
-
+item1 = Item("Phone")
 # two attributes
-# 1. height 2. width
-item1.height = 7.34
-item1.width = 9.15
+# 1. price 2. quantity
+item1.price = 700
+item1.quantity = 9
 
-print(item1.calculate_area(item1.height, item1.width))
+
+
+item1 = Item("Laptop")
+item1.price = 700
+item1.quantity = 9

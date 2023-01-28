@@ -1,4 +1,8 @@
 class Item:
+    # magic method - __init__()
+    def __init__(self):
+        pass
+
     def calculate_area(self, x, y):
         return x * y
 

@@ -20,6 +20,8 @@ story = "Hello {}, Welcome to the {} world. Here we willl discuss about the {}."
 print(story.format("Mike", "Programming", "Science & Technology"))
 
 
+txt1  = "Hello {programming_language}. How you feel to get a new {member}?"
+print(txt1.format(programming_language="python", member="john"))
 
 
 # ref:: https://www.w3schools.com/python/ref_string_format.asp

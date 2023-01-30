@@ -7,3 +7,9 @@
 price  = 808.56
 itemPrice = "The price is {} dollers"
 print(itemPrice.format(price))
+
+
+#  Format the price to be displayed as a number with two decimals:
+weight = 46
+txt = "weight is {:.2f} kg"
+print(txt.format(weight))

@@ -23,5 +23,18 @@ print(story.format("Mike", "Programming", "Science & Technology"))
 txt1  = "Hello {programming_language}. How you feel to get a new {member}?"
 print(txt1.format(programming_language="python", member="john"))
 
+txt2 = "I want {} pieces of item number {} for {} dollars."
+print(txt2.format(3, 57, 69))
+
+
+# index number
+
+quantity = 17
+itemno = 290
+price = 617
+user_order = "I want {0} pieces of item number {1} for {2:.2f} dollars."
+print(user_order.format(quantity, itemno, price))
+
+
 
 # ref:: https://www.w3schools.com/python/ref_string_format.asp

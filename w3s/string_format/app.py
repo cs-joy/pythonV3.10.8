@@ -13,3 +13,13 @@ print(itemPrice.format(price))
 weight = 46
 txt = "weight is {:.2f} kg"
 print(txt.format(weight))
+
+
+# multiple values
+story = "Hello {}, Welcome to the {} world. Here we willl discuss about the {}."
+print(story.format("Mike", "Programming", "Science & Technology"))
+
+
+
+
+# ref:: https://www.w3schools.com/python/ref_string_format.asp

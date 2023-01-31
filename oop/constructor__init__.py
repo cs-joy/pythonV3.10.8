@@ -19,6 +19,8 @@ class Product:
     def apply_discount(self):
         self.price = self.price * self.pay_rate
 
+    def __repr__(self):
+        "Product"
 
 
 item1 = Product("Ball", 25, 5)
@@ -29,6 +31,7 @@ item5 = Product("Cable", 55, 100)
 
 
 print(Product.all) # print out object
-
+'''
 for instance in Product.all:
     print(instance.name) # print name of product
+'''

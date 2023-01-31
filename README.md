@@ -15,3 +15,5 @@ read more to visit: [www.python.org](https://www.python.org/)
 # [Facial Recognition](https://www.youtube.com/watch?v=LKispFFQ5GU)
   - [LFW FAce Database](http://vis-www.cs.umass.edu/lfw/)
 
+# [Data Recovery Modules](https://pypi.org/project/pyFileFixity/)
+

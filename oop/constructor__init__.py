@@ -20,7 +20,7 @@ class Product:
         self.price = self.price * self.pay_rate
 
     def __repr__(self):
-        return "Product"
+        return f"Product('{self.name}', '{self.price}', '{self.quantity}')"
 
 
 item1 = Product("Ball", 25, 5)

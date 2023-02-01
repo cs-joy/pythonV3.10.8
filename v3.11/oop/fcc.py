@@ -48,5 +48,4 @@ print(item1.price)
 item2.pay_rate = 0.7
 item2.apply_discount()
 print(item2.price)
-
 # demonstration of Class and Instance level attributes
